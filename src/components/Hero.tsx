@@ -19,7 +19,7 @@ const Hero = () => {
           role="img"
           aria-label="Hogar inteligente con sistema de automatización y control central SmartPeace"
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/60"></div>
         </div>
       </div>
 
