@@ -74,7 +74,7 @@ const ContactForm = () => {
             </div>
 
             <div className="mt-8">
-              <a 
+              <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -83,21 +83,6 @@ const ContactForm = () => {
                 <MessageCircle size={24} />
                 Contactar por WhatsApp
               </a>
-            </div>
-
-            {/* Google Maps Embed */}
-            <div className="mt-12 rounded-xl overflow-hidden shadow-lg h-[300px]">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.7897363864747!2d-103.3897247!3d20.674897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae4e98d5453d%3A0xa0f2d0dd574f2d4a!2sHidalgo%20216%2C%20Zapopan%2C%20Jalisco!5e0!3m2!1ses-419!2smx!4v1710901234567!5m2!1ses-419!2smx"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Ubicación de SmartPeace"
-                className="w-full h-full"
-              ></iframe>
             </div>
           </div>
 
