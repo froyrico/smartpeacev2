@@ -246,7 +246,7 @@ const CorporativoPage = () => {
               <div className="md:w-1/2 animate-slideInLeft" style={{ animationDelay: '0.2s' }}>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
                   <img
-                    src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    src="/scomercial.jpg"
                     alt="Seguridad integral para negocios"
                     className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
                   />
@@ -439,7 +439,7 @@ const CorporativoPage = () => {
               <div className="md:w-1/2 animate-slideInLeft" style={{ animationDelay: '0.2s' }}>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
                   <img
-                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    src="/apcomercial.jpg"
                     alt="Consultoría empresarial"
                     className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
                   />
@@ -531,7 +531,7 @@ const CorporativoPage = () => {
               <div className="md:w-1/2 animate-slideInRight" style={{ animationDelay: '0.2s' }}>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
                   <img
-                    src="https://images.unsplash.com/photo-1556742393-d75f468bfcb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    src="/mcomercial.jpg"
                     alt="Soporte técnico empresarial"
                     className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
                   />
