@@ -8,6 +8,13 @@ const sectors = [
     image: 'https://images.unsplash.com/photo-1558036117-15d82a90b9b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     title: 'Residencial y Condominios',
     description: 'Soluciones inteligentes para hogares y edificios residenciales que mejoran la calidad de vida.',
+    colorScheme: {
+      primary: 'from-green-500 to-emerald-600',
+      light: 'bg-green-50',
+      accent: 'border-green-500',
+      text: 'text-green-600',
+      hover: 'hover:bg-green-100'
+    },
     features: [
       {
         icon: Lightbulb,
@@ -29,6 +36,13 @@ const sectors = [
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     title: 'Corporativo y Comercial',
     description: 'Soluciones empresariales para oficinas, hoteles y negocios que optimizan operaciones.',
+    colorScheme: {
+      primary: 'from-blue-500 to-indigo-600',
+      light: 'bg-blue-50',
+      accent: 'border-blue-500',
+      text: 'text-blue-600',
+      hover: 'hover:bg-blue-100'
+    },
     features: [
       {
         icon: Thermometer,
@@ -50,6 +64,13 @@ const sectors = [
     image: 'https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     title: 'Institucional',
     description: 'Tecnología avanzada para escuelas y estacionamientos que garantizan seguridad y eficiencia.',
+    colorScheme: {
+      primary: 'from-orange-500 to-amber-600',
+      light: 'bg-orange-50',
+      accent: 'border-orange-500',
+      text: 'text-orange-600',
+      hover: 'hover:bg-orange-100'
+    },
     features: [
       {
         icon: Wifi,
@@ -87,18 +108,18 @@ const Sectors = () => {
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={sector.image} 
+                <img
+                  src={sector.image}
                   alt={sector.title}
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-black/50"></div>
+                <div className={`absolute inset-0 bg-gradient-to-br ${sector.colorScheme.primary} opacity-70`}></div>
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300">
-                      <sector.icon className="text-white" size={24} />
+                    <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300 shadow-lg">
+                      <sector.icon className={sector.colorScheme.text} size={24} />
                     </div>
-                    <h3 className="text-2xl font-bold text-white">{sector.title}</h3>
+                    <h3 className="text-2xl font-bold text-white drop-shadow-lg">{sector.title}</h3>
                   </div>
                 </div>
               </div>
@@ -109,8 +130,8 @@ const Sectors = () => {
                 <div className="space-y-4 mb-6">
                   {sector.features.map((feature, idx) => (
                     <div key={idx} className="flex items-center gap-3 group/feature">
-                      <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center group-hover/feature:bg-primary/20 transition-colors duration-300">
-                        <feature.icon className="text-primary" size={18} />
+                      <div className={`w-8 h-8 ${sector.colorScheme.light} rounded-lg flex items-center justify-center ${sector.colorScheme.hover} transition-colors duration-300`}>
+                        <feature.icon className={sector.colorScheme.text} size={18} />
                       </div>
                       <p className="text-gray-900 font-medium">{feature.text}</p>
                     </div>

@@ -2,8 +2,9 @@ import React from 'react';
 import {
   Home, Shield, Wifi, Headphones, Wrench, Lightbulb, Thermometer, Tv,
   Palette, Camera, Bell, Fingerprint, Flame, Network, Radio, Lock,
-  Building2, Users, Cog, PenTool as Tool, RefreshCw, PhoneCall
+  Building2, Users, Cog, PenTool as Tool, RefreshCw, PhoneCall, ArrowRight
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
@@ -187,10 +188,24 @@ const Services = () => {
                 ))}
               </div>
 
-              <div className="bg-primary/5 border-l-4 border-primary p-4 rounded-r-lg">
+              <div className="bg-primary/5 border-l-4 border-primary p-4 rounded-r-lg mb-4">
                 <p className="text-gray-700">
                   <span className="font-semibold">Beneficio Clave:</span> {service.benefit}
                 </p>
+              </div>
+
+              <div className="mt-auto pt-4 border-t border-gray-100">
+                <p className="text-sm text-gray-600 mb-3">Ver este servicio aplicado en:</p>
+                <div className="flex flex-wrap gap-2">
+                  <Link to="/sectores/residencial" className="inline-flex items-center gap-1 text-xs font-medium text-green-700 bg-green-50 px-3 py-1.5 rounded-full hover:bg-green-100 transition-colors">
+                    <Home size={14} />
+                    Residencial
+                  </Link>
+                  <Link to="/sectores/corporativo" className="inline-flex items-center gap-1 text-xs font-medium text-blue-700 bg-blue-50 px-3 py-1.5 rounded-full hover:bg-blue-100 transition-colors">
+                    <Building2 size={14} />
+                    Corporativo
+                  </Link>
+                </div>
               </div>
             </div>
           ))}

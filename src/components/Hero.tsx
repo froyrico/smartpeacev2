@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, MessageCircle } from 'lucide-react';
+import CountUpAnimation from './CountUpAnimation';
 
 const Hero = () => {
   const whatsappNumber = '523311090460';
@@ -32,12 +33,12 @@ const Hero = () => {
           Mejora tu propiedad con soluciones tecnológicas de vanguardia que aumentan la seguridad, el confort y la eficiencia energética en Guadalajara.
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 animate-fadeIn" style={{ animationDelay: '0.4s' }}>
-          <a 
-            href="#contact" 
+          <a
+            href="#contact"
             className="btn-primary group w-full sm:w-auto"
-            aria-label="Solicitar cotización para servicios de seguridad y automatización"
+            aria-label="Agenda tu consulta gratuita para servicios de seguridad y automatización"
           >
-            Solicitar Cotización
+            Agenda tu Consulta Gratuita
             <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
           </a>
           <a 
@@ -54,21 +55,33 @@ const Hero = () => {
         
         {/* Trust indicators */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-white animate-fadeIn" style={{ animationDelay: '0.6s' }}>
-          <div className="text-center">
-            <div className="text-3xl font-bold mb-2">100+</div>
-            <div className="text-gray-300">Proyectos Exitosos</div>
+          <div className="text-center group">
+            <div className="relative inline-block">
+              <div className="absolute inset-0 bg-secondary/20 blur-xl rounded-full scale-150 group-hover:scale-175 transition-transform duration-300"></div>
+              <CountUpAnimation end={100} suffix="+" className="relative text-4xl md:text-5xl font-bold mb-2 text-secondary drop-shadow-lg" />
+            </div>
+            <div className="text-gray-200 font-medium">Proyectos Exitosos</div>
           </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold mb-2">98%</div>
-            <div className="text-gray-300">Clientes Satisfechos</div>
+          <div className="text-center group">
+            <div className="relative inline-block">
+              <div className="absolute inset-0 bg-secondary/20 blur-xl rounded-full scale-150 group-hover:scale-175 transition-transform duration-300"></div>
+              <CountUpAnimation end={98} suffix="%" className="relative text-4xl md:text-5xl font-bold mb-2 text-secondary drop-shadow-lg" />
+            </div>
+            <div className="text-gray-200 font-medium">Clientes Satisfechos</div>
           </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold mb-2">5+</div>
-            <div className="text-gray-300">Años de Experiencia</div>
+          <div className="text-center group">
+            <div className="relative inline-block">
+              <div className="absolute inset-0 bg-secondary/20 blur-xl rounded-full scale-150 group-hover:scale-175 transition-transform duration-300"></div>
+              <CountUpAnimation end={5} suffix="+" className="relative text-4xl md:text-5xl font-bold mb-2 text-secondary drop-shadow-lg" />
+            </div>
+            <div className="text-gray-200 font-medium">Años de Experiencia</div>
           </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold mb-2">24/7</div>
-            <div className="text-gray-300">Soporte Técnico</div>
+          <div className="text-center group">
+            <div className="relative inline-block">
+              <div className="absolute inset-0 bg-secondary/20 blur-xl rounded-full scale-150 group-hover:scale-175 transition-transform duration-300"></div>
+              <div className="relative text-4xl md:text-5xl font-bold mb-2 text-secondary drop-shadow-lg">24/7</div>
+            </div>
+            <div className="text-gray-200 font-medium">Soporte Técnico</div>
           </div>
         </div>
       </div>
