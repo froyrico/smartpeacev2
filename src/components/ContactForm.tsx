@@ -95,8 +95,8 @@ const ContactForm = () => {
                 </label>
                 <input
                   type="text"
-                  id="name"
-                  name="name"
+                  id="user_name"
+                  name="user_name"
                   required
                   className="input-field"
                   placeholder="Tu nombre completo"
@@ -109,8 +109,8 @@ const ContactForm = () => {
                 </label>
                 <input
                   type="email"
-                  id="email"
-                  name="email"
+                  id="user_email"
+                  name="user_email"
                   required
                   className="input-field"
                   placeholder="tu@email.com"
@@ -123,8 +123,8 @@ const ContactForm = () => {
                 </label>
                 <input
                   type="tel"
-                  id="phone"
-                  name="phone"
+                  id="user_phone"
+                  name="user_phone"
                   className="input-field"
                   placeholder="+52 33 1109 0460"
                 />
