@@ -145,7 +145,7 @@ const CorporativoPage = () => {
               <div className="md:w-1/2 animate-slideInRight" style={{ animationDelay: '0.2s' }}>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
                   <img
-                    src="/airesidencia (1).jpg"
+                    src="/aicomercial.jpg"
                     alt="Automatización inteligente para negocios"
                     className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
                   />
