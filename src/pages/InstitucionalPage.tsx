@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import {
   ArrowRight, GraduationCap, Lightbulb, Thermometer, Camera, Shield,
-  Network, Wifi, Music, MessageCircle
+  Network, Wifi, Music, MessageCircle, Bell, Fingerprint, Flame, Lock, Radio, Building2, Users, Cog, PenTool as Tool, RefreshCw, PhoneCall
 } from 'lucide-react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
@@ -156,6 +156,392 @@ const InstitucionalPage = () => {
                     <div className="p-8">
                       <h3 className="text-white text-2xl font-bold mb-3 drop-shadow-lg">Automatización Institucional</h3>
                       <p className="text-gray-200 text-lg">Sistemas inteligentes que optimizan recursos y mejoran la experiencia en espacios educativos y públicos.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Separador */}
+        <div className="h-2 bg-gradient-to-r from-transparent via-orange-500 to-transparent"></div>
+
+        {/* Service 2: Seguridad Integral */}
+        <section className="py-24 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
+              <div className="md:w-1/2 animate-slideInRight">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-amber-600 rounded-2xl flex items-center justify-center transform rotate-3 shadow-lg">
+                    <Shield className="text-white" size={32} />
+                  </div>
+                  <h2 className="text-3xl font-bold text-gray-800">2. SEGURIDAD INTEGRAL</h2>
+                </div>
+
+                <h3 className="text-xl font-semibold text-orange-600 mb-6">Protección completa para tu comunidad educativa</h3>
+
+                <p className="text-gray-700 mb-8 leading-relaxed">
+                  La seguridad de estudiantes, personal y visitantes es prioritaria. Con nuestros sistemas avanzados, puedes monitorear accesos, prevenir incidentes y responder rápidamente ante emergencias.
+                </p>
+
+                <div className="mb-8">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-6">¿Qué incluye?</h4>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-orange-50 to-transparent rounded-xl border-l-4 border-orange-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Camera className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Vigilancia Perimetral e Interna</span>
+                        <p className="text-gray-600 leading-relaxed">Cámaras de alta resolución en entradas, pasillos, patios y áreas sensibles.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-orange-50 to-transparent rounded-xl border-l-4 border-orange-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Bell className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Sistemas de Alertas Tempranas</span>
+                        <p className="text-gray-600 leading-relaxed">Alarmas silenciosas y botón de pánico para situaciones de emergencia.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-orange-50 to-transparent rounded-xl border-l-4 border-orange-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Fingerprint className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Control de Accesos por Zonas</span>
+                        <p className="text-gray-600 leading-relaxed">Registro de entradas y salidas con credenciales para personal y visitantes.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-orange-50 to-transparent rounded-xl border-l-4 border-orange-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Flame className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Seguridad Contra Incendios</span>
+                        <p className="text-gray-600 leading-relaxed">Detectores de humo, rociadores automáticos y sistemas de evacuación.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-orange-50 border-l-4 border-orange-600 p-6 rounded-r-xl shadow-md">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-3">Beneficios clave:</h4>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
+                      Ambiente seguro para estudiantes y personal
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
+                      Prevención y respuesta rápida ante incidentes
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
+                      Cumplimiento con normativas de seguridad
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="md:w-1/2 animate-slideInLeft" style={{ animationDelay: '0.2s' }}>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
+                  <img
+                    src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="Seguridad integral para instituciones"
+                    className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end">
+                    <div className="p-8">
+                      <h3 className="text-white text-2xl font-bold mb-3 drop-shadow-lg">Seguridad Institucional</h3>
+                      <p className="text-gray-200 text-lg">Protección integral para ambientes educativos y públicos seguros.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Separador */}
+        <div className="h-2 bg-gradient-to-r from-transparent via-orange-500 to-transparent"></div>
+
+        {/* Service 3: Redes y Conectividad */}
+        <section className="py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row gap-12 items-center">
+              <div className="md:w-1/2 animate-slideInLeft">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-amber-600 rounded-2xl flex items-center justify-center transform rotate-3 shadow-lg">
+                    <Wifi className="text-white" size={32} />
+                  </div>
+                  <h2 className="text-3xl font-bold text-gray-800">3. REDES Y CONECTIVIDAD</h2>
+                </div>
+
+                <h3 className="text-xl font-semibold text-orange-600 mb-6">Conectividad institucional de alto rendimiento</h3>
+
+                <p className="text-gray-700 mb-8 leading-relaxed">
+                  Una institución moderna requiere infraestructura de red robusta para laboratorios, aulas digitales, sistemas administrativos y acceso a internet para toda la comunidad educativa.
+                </p>
+
+                <div className="mb-8">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-6">¿Qué ofrecemos?</h4>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-orange-50 to-transparent rounded-xl border-l-4 border-orange-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Network className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Infraestructura de Red Campus</span>
+                        <p className="text-gray-600 leading-relaxed">Cableado estructurado de alta velocidad entre edificios y salas.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-orange-50 to-transparent rounded-xl border-l-4 border-orange-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Radio className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Wi-Fi Institucional</span>
+                        <p className="text-gray-600 leading-relaxed">Cobertura completa con capacidad para miles de usuarios simultáneos.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-orange-50 to-transparent rounded-xl border-l-4 border-orange-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Lock className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Seguridad y Filtrado de Contenido</span>
+                        <p className="text-gray-600 leading-relaxed">Control de acceso a internet con filtros apropiados para entornos educativos.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-orange-50 to-transparent rounded-xl border-l-4 border-orange-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Building2 className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Gestión Centralizada</span>
+                        <p className="text-gray-600 leading-relaxed">Administración de red desde un punto central con monitoreo en tiempo real.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-orange-50 border-l-4 border-orange-600 p-6 rounded-r-xl shadow-md">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-3">Beneficios clave:</h4>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
+                      Acceso equitativo a recursos digitales
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
+                      Red segura con control parental institucional
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
+                      Soporte para aprendizaje digital y híbrido
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="md:w-1/2 animate-slideInRight" style={{ animationDelay: '0.2s' }}>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
+                  <img
+                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="Redes y conectividad institucional"
+                    className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end">
+                    <div className="p-8">
+                      <h3 className="text-white text-2xl font-bold mb-3 drop-shadow-lg">Red Campus</h3>
+                      <p className="text-gray-200 text-lg">Conectividad de alto rendimiento para educación del siglo XXI.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Separador */}
+        <div className="h-2 bg-gradient-to-r from-transparent via-orange-500 to-transparent"></div>
+
+        {/* Service 4: Consultoría y Personalización */}
+        <section className="py-24 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
+              <div className="md:w-1/2 animate-slideInRight">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-amber-600 rounded-2xl flex items-center justify-center transform rotate-3 shadow-lg">
+                    <Users className="text-white" size={32} />
+                  </div>
+                  <h2 className="text-3xl font-bold text-gray-800">4. CONSULTORÍA Y PERSONALIZACIÓN</h2>
+                </div>
+
+                <h3 className="text-xl font-semibold text-orange-600 mb-6">Soluciones educativas a medida</h3>
+
+                <p className="text-gray-700 mb-8 leading-relaxed">
+                  Cada institución tiene necesidades particulares según su tamaño, presupuesto y objetivos educativos. Diseñamos soluciones que se adaptan perfectamente a tu realidad institucional.
+                </p>
+
+                <div className="mb-8">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-6">¿Cómo te ayudamos?</h4>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-orange-50 to-transparent rounded-xl border-l-4 border-orange-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Users className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Evaluación Institucional</span>
+                        <p className="text-gray-600 leading-relaxed">Análisis de infraestructura actual y propuesta de mejoras tecnológicas.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-orange-50 to-transparent rounded-xl border-l-4 border-orange-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Cog className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Integración con Sistemas Académicos</span>
+                        <p className="text-gray-600 leading-relaxed">Compatibilidad con plataformas educativas y sistemas administrativos.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-orange-50 to-transparent rounded-xl border-l-4 border-orange-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Tool className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Capacitación del Personal</span>
+                        <p className="text-gray-600 leading-relaxed">Talleres para docentes y administrativos en el uso de tecnologías.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-orange-50 border-l-4 border-orange-600 p-6 rounded-r-xl shadow-md">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-3">Beneficios clave:</h4>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
+                      Inversión optimizada en tecnología educativa
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
+                      Solución adaptada a objetivos pedagógicos
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
+                      Personal capacitado y con confianza digital
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="md:w-1/2 animate-slideInLeft" style={{ animationDelay: '0.2s' }}>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
+                  <img
+                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="Consultoría educativa"
+                    className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end">
+                    <div className="p-8">
+                      <h3 className="text-white text-2xl font-bold mb-3 drop-shadow-lg">Asesoría Educativa</h3>
+                      <p className="text-gray-200 text-lg">Planeación estratégica para modernización institucional.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Separador */}
+        <div className="h-2 bg-gradient-to-r from-transparent via-orange-500 to-transparent"></div>
+
+        {/* Service 5: Mantenimiento y Soporte */}
+        <section className="py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row gap-12 items-center">
+              <div className="md:w-1/2 animate-slideInLeft">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-amber-600 rounded-2xl flex items-center justify-center transform rotate-3 shadow-lg">
+                    <Tool className="text-white" size={32} />
+                  </div>
+                  <h2 className="text-3xl font-bold text-gray-800">5. MANTENIMIENTO Y SOPORTE</h2>
+                </div>
+
+                <h3 className="text-xl font-semibold text-orange-600 mb-6">Soporte continuo para operación sin interrupciones</h3>
+
+                <p className="text-gray-700 mb-8 leading-relaxed">
+                  Las instituciones no pueden darse el lujo de interrupciones tecnológicas. Nuestro equipo de soporte garantiza que todos tus sistemas funcionen correctamente durante todo el ciclo escolar.
+                </p>
+
+                <div className="mb-8">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-6">¿Qué incluye nuestro soporte?</h4>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-orange-50 to-transparent rounded-xl border-l-4 border-orange-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Tool className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Mantenimiento Programado</span>
+                        <p className="text-gray-600 leading-relaxed">Revisiones periódicas durante periodos no lectivos para evitar interrupciones.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-orange-50 to-transparent rounded-xl border-l-4 border-orange-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <RefreshCw className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Actualizaciones de Seguridad</span>
+                        <p className="text-gray-600 leading-relaxed">Mejoras constantes para proteger datos sensibles y cumplir regulaciones.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-orange-50 to-transparent rounded-xl border-l-4 border-orange-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <PhoneCall className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Mesa de Ayuda Institucional</span>
+                        <p className="text-gray-600 leading-relaxed">Línea directa para personal administrativo y docente con respuesta rápida.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-orange-50 border-l-4 border-orange-600 p-6 rounded-r-xl shadow-md">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-3">Beneficios clave:</h4>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
+                      Operación continua sin interrupciones académicas
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
+                      Protección de datos sensibles de estudiantes
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
+                      Soporte técnico rápido y confiable
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="md:w-1/2 animate-slideInRight" style={{ animationDelay: '0.2s' }}>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
+                  <img
+                    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="Soporte técnico institucional"
+                    className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end">
+                    <div className="p-8">
+                      <h3 className="text-white text-2xl font-bold mb-3 drop-shadow-lg">Soporte Institucional</h3>
+                      <p className="text-gray-200 text-lg">Mantenimiento especializado para continuidad educativa.</p>
                     </div>
                   </div>
                 </div>

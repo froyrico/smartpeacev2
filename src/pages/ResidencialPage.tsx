@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { ArrowRight, Home, Lightbulb, Thermometer, Camera, Shield, Network, Wifi, Music, MessageCircle } from 'lucide-react';
+import { ArrowRight, Home, Lightbulb, Thermometer, Camera, Shield, Network, Wifi, Music, MessageCircle, Bell, Fingerprint, Flame, Lock, Radio, Building2, Users, Cog, PenTool as Tool, RefreshCw, PhoneCall } from 'lucide-react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
@@ -153,6 +153,383 @@ const ResidencialPage = () => {
                     <div className="p-8">
                       <h3 className="text-white text-2xl font-bold mb-3 drop-shadow-lg">Automatización para Hogares</h3>
                       <p className="text-gray-200 text-lg">Sistemas inteligentes que mejoran tu calidad de vida y reducen el consumo energético.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Separador */}
+        <div className="h-2 bg-gradient-to-r from-transparent via-green-500 to-transparent"></div>
+
+        {/* Service 2: Seguridad Integral */}
+        <section className="py-24 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
+              <div className="md:w-1/2 animate-slideInRight">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center transform rotate-3 shadow-lg">
+                    <Shield className="text-white" size={32} />
+                  </div>
+                  <h2 className="text-3xl font-bold text-gray-800">2. SEGURIDAD INTEGRAL</h2>
+                </div>
+
+                <h3 className="text-xl font-semibold text-green-600 mb-6">Protege lo que más importa: tu familia y tu patrimonio</h3>
+
+                <p className="text-gray-700 mb-8 leading-relaxed">
+                  Tu hogar es tu santuario, y merece la protección más avanzada. Con nuestros sistemas de seguridad, puedes estar tranquilo sabiendo que tu familia y tus bienes están seguros las 24 horas del día.
+                </p>
+
+                <div className="mb-8">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-6">¿Qué incluye?</h4>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-green-50 to-transparent rounded-xl border-l-4 border-green-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Camera className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Vigilancia 24/7</span>
+                        <p className="text-gray-600 leading-relaxed">Cámaras HD con visión nocturna, detección de movimiento y acceso remoto desde tu smartphone.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-green-50 to-transparent rounded-xl border-l-4 border-green-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Bell className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Sistemas de Alarma Multi-Capa</span>
+                        <p className="text-gray-600 leading-relaxed">Sensores en puertas, ventanas y movimiento con alertas inmediatas a tu móvil.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-green-50 to-transparent rounded-xl border-l-4 border-green-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Fingerprint className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Control de Accesos</span>
+                        <p className="text-gray-600 leading-relaxed">Cerraduras inteligentes con huella digital, código PIN y tarjetas RFID.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-green-50 to-transparent rounded-xl border-l-4 border-green-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Flame className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Protección Contra Incendios</span>
+                        <p className="text-gray-600 leading-relaxed">Detectores de humo, gas y agua con apagado automático de equipos.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-green-50 border-l-4 border-green-600 p-6 rounded-r-xl shadow-md">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-3">Beneficios clave:</h4>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      Tranquilidad total: monitorea tu hogar desde cualquier lugar
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      Respuesta rápida ante emergencias
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      Reduce riesgos de intrusiones, incendios y fugas
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="md:w-1/2 animate-slideInLeft" style={{ animationDelay: '0.2s' }}>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
+                  <img
+                    src="https://images.unsplash.com/photo-1558002038-bb4237b54fd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="Seguridad integral para hogares"
+                    className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end">
+                    <div className="p-8">
+                      <h3 className="text-white text-2xl font-bold mb-3 drop-shadow-lg">Seguridad Avanzada</h3>
+                      <p className="text-gray-200 text-lg">Protección completa con tecnología de última generación para tu tranquilidad.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Separador */}
+        <div className="h-2 bg-gradient-to-r from-transparent via-green-500 to-transparent"></div>
+
+        {/* Service 3: Redes y Conectividad */}
+        <section className="py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row gap-12 items-center">
+              <div className="md:w-1/2 animate-slideInLeft">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center transform rotate-3 shadow-lg">
+                    <Wifi className="text-white" size={32} />
+                  </div>
+                  <h2 className="text-3xl font-bold text-gray-800">3. REDES Y CONECTIVIDAD</h2>
+                </div>
+
+                <h3 className="text-xl font-semibold text-green-600 mb-6">Internet rápido y seguro en cada rincón de tu hogar</h3>
+
+                <p className="text-gray-700 mb-8 leading-relaxed">
+                  En un mundo conectado, necesitas una red confiable y rápida. Ya sea para trabajar desde casa, ver películas en streaming o jugar en línea, te garantizamos una conexión estable sin interrupciones.
+                </p>
+
+                <div className="mb-8">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-6">¿Qué ofrecemos?</h4>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-green-50 to-transparent rounded-xl border-l-4 border-green-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Network className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Cableado Estructurado</span>
+                        <p className="text-gray-600 leading-relaxed">Instalación de redes Ethernet de alta velocidad en toda tu casa.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-green-50 to-transparent rounded-xl border-l-4 border-green-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Radio className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Wi-Fi Mesh Optimizado</span>
+                        <p className="text-gray-600 leading-relaxed">Cobertura total sin zonas muertas, con roaming automático entre puntos de acceso.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-green-50 to-transparent rounded-xl border-l-4 border-green-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Lock className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Seguridad de Redes</span>
+                        <p className="text-gray-600 leading-relaxed">Redes separadas para invitados y dispositivos IoT, protegiendo tu privacidad.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-green-50 border-l-4 border-green-600 p-6 rounded-r-xl shadow-md">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-3">Beneficios clave:</h4>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      Internet estable en cualquier habitación
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      Soporte para múltiples dispositivos simultáneos
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      Protección contra amenazas cibernéticas
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="md:w-1/2 animate-slideInRight" style={{ animationDelay: '0.2s' }}>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
+                  <img
+                    src="https://images.unsplash.com/photo-1606904825846-647eb07f5be2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="Redes y conectividad para hogares"
+                    className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end">
+                    <div className="p-8">
+                      <h3 className="text-white text-2xl font-bold mb-3 drop-shadow-lg">Conectividad Total</h3>
+                      <p className="text-gray-200 text-lg">Red robusta y segura para todos tus dispositivos inteligentes.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Separador */}
+        <div className="h-2 bg-gradient-to-r from-transparent via-green-500 to-transparent"></div>
+
+        {/* Service 4: Consultoría y Personalización */}
+        <section className="py-24 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
+              <div className="md:w-1/2 animate-slideInRight">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center transform rotate-3 shadow-lg">
+                    <Users className="text-white" size={32} />
+                  </div>
+                  <h2 className="text-3xl font-bold text-gray-800">4. CONSULTORÍA Y PERSONALIZACIÓN</h2>
+                </div>
+
+                <h3 className="text-xl font-semibold text-green-600 mb-6">Soluciones hechas a tu medida</h3>
+
+                <p className="text-gray-700 mb-8 leading-relaxed">
+                  Cada hogar es único, y tus necesidades también. Por eso trabajamos contigo para crear un sistema personalizado que se adapte perfectamente a tu estilo de vida y presupuesto.
+                </p>
+
+                <div className="mb-8">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-6">¿Cómo te ayudamos?</h4>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-green-50 to-transparent rounded-xl border-l-4 border-green-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Users className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Asesoría Personalizada</span>
+                        <p className="text-gray-600 leading-relaxed">Consulta gratuita para entender tus necesidades y proponer las mejores soluciones.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-green-50 to-transparent rounded-xl border-l-4 border-green-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Cog className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Integración de Dispositivos</span>
+                        <p className="text-gray-600 leading-relaxed">Adaptamos equipos que ya tienes instalados a nuestros sistemas inteligentes.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-green-50 to-transparent rounded-xl border-l-4 border-green-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Tool className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Capacitación y Soporte</span>
+                        <p className="text-gray-600 leading-relaxed">Te enseñamos a usar todos los sistemas para que aproveches al máximo su potencial.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-green-50 border-l-4 border-green-600 p-6 rounded-r-xl shadow-md">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-3">Beneficios clave:</h4>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      Solución adaptada a tu presupuesto
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      Compatibilidad con tus dispositivos actuales
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      Soporte continuo y capacitación completa
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="md:w-1/2 animate-slideInLeft" style={{ animationDelay: '0.2s' }}>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
+                  <img
+                    src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="Consultoría personalizada"
+                    className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end">
+                    <div className="p-8">
+                      <h3 className="text-white text-2xl font-bold mb-3 drop-shadow-lg">Asesoría Experta</h3>
+                      <p className="text-gray-200 text-lg">Diseñamos la solución perfecta para tu hogar y estilo de vida.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Separador */}
+        <div className="h-2 bg-gradient-to-r from-transparent via-green-500 to-transparent"></div>
+
+        {/* Service 5: Mantenimiento y Soporte */}
+        <section className="py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row gap-12 items-center">
+              <div className="md:w-1/2 animate-slideInLeft">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center transform rotate-3 shadow-lg">
+                    <Tool className="text-white" size={32} />
+                  </div>
+                  <h2 className="text-3xl font-bold text-gray-800">5. MANTENIMIENTO Y SOPORTE</h2>
+                </div>
+
+                <h3 className="text-xl font-semibold text-green-600 mb-6">Tu sistema siempre funcionando al 100%</h3>
+
+                <p className="text-gray-700 mb-8 leading-relaxed">
+                  La tecnología requiere cuidado para funcionar correctamente. Nuestro equipo de expertos está disponible para resolver cualquier problema, realizar actualizaciones y mantener tu sistema en perfectas condiciones.
+                </p>
+
+                <div className="mb-8">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-6">¿Qué incluye nuestro soporte?</h4>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-green-50 to-transparent rounded-xl border-l-4 border-green-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Tool className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Diagnóstico y Reparación</span>
+                        <p className="text-gray-600 leading-relaxed">Identificación rápida de problemas y solución efectiva de fallas.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-green-50 to-transparent rounded-xl border-l-4 border-green-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <RefreshCw className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Actualización de Equipos</span>
+                        <p className="text-gray-600 leading-relaxed">Mejoras de firmware y software para que tu sistema esté siempre actualizado.</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4 p-5 bg-gradient-to-r from-green-50 to-transparent rounded-xl border-l-4 border-green-500 hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <PhoneCall className="text-white" size={20} />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold text-gray-900 block mb-2 text-lg">Soporte Remoto y en Sitio</span>
+                        <p className="text-gray-600 leading-relaxed">Atención rápida vía telefónica, chat o visita a domicilio según la necesidad.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-green-50 border-l-4 border-green-600 p-6 rounded-r-xl shadow-md">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-3">Beneficios clave:</h4>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      Sistema operativo sin interrupciones
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      Actualizaciones constantes de seguridad
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      Soporte técnico disponible cuando lo necesites
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="md:w-1/2 animate-slideInRight" style={{ animationDelay: '0.2s' }}>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
+                  <img
+                    src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="Mantenimiento y soporte técnico"
+                    className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end">
+                    <div className="p-8">
+                      <h3 className="text-white text-2xl font-bold mb-3 drop-shadow-lg">Soporte Profesional</h3>
+                      <p className="text-gray-200 text-lg">Mantenimiento continuo para que tu sistema funcione perfectamente.</p>
                     </div>
                   </div>
                 </div>
