@@ -11,15 +11,15 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-fadeIn"
           style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80")',
+            backgroundImage: 'url("/hero (1).jpg")',
           }}
           role="img"
-          aria-label="Sistemas de seguridad inteligente y automatización"
+          aria-label="Hogar inteligente con sistema de automatización y control central SmartPeace"
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/50"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40"></div>
         </div>
       </div>
 
