@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Open Sans', system-ui, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* Prevenir scroll horizontal */
+  }
+  
+  body {
+    overflow-x: hidden; /* Asegurar que no haya scroll horizontal */
+    width: 100%;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#5CB85C] text-white px-6 py-3 rounded-md hover:bg-[#4CAE4C] transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-semibold flex items-center justify-center gap-2;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-[#1E88E5] border-2 border-[#1E88E5] px-6 py-3 rounded-md hover:bg-[#1E88E5] hover:text-white transition-all duration-300 font-semibold flex items-center justify-center gap-2;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-[#1E88E5] mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-1;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#1E88E5] focus:border-[#1E88E5] transition-all duration-300;
+  }
+
+  .nav-link {
+    @apply text-gray-700 hover:text-[#1E88E5] transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#1E88E5] after:transition-all hover:after:w-full;
+  }
+
+  /* Contenedor principal para secciones */
+  .section-container {
+    @apply w-full max-w-full overflow-x-hidden;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading States */
+.loading-skeleton {
+  @apply animate-pulse bg-gray-200 rounded;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.focus-visible:focus {
+  @apply outline-none ring-2 ring-[#1E88E5] ring-offset-2;
+}
+
+/* Ajustes para prevenir desbordamiento horizontal */
+.max-w-7xl {
+  @apply px-4 sm:px-6 lg:px-8 mx-auto w-full;
+}
+
+/* Asegurar que las imágenes no causen desbordamiento */
+img {
+  @apply max-w-full h-auto;
+}
+
+/* Ajustes para elementos que podrían causar scroll horizontal */
+.overflow-x-auto {
+  @apply max-w-full;
+}
+
+/* Ajustes para tablas y otros elementos que podrían ser muy anchos */
+table {
+  @apply w-full max-w-full;
+}
+
+/* Transiciones suaves para enlaces y botones */
+a, button {
+  @apply transition-all duration-300;
+}
+
+/* Mejorar la interactividad de los elementos clickeables */
+.interactive {
+  @apply transform transition-transform duration-300 hover:scale-105 active:scale-95;
+}
