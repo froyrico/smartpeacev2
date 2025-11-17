@@ -13,10 +13,10 @@ interface BreadcrumbProps {
 
 const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
   return (
-    <nav className="flex items-center space-x-2 text-sm mb-6 animate-fadeIn" aria-label="Breadcrumb">
+    <nav className="flex items-center flex-wrap gap-2 text-xs sm:text-sm mb-4 sm:mb-6 animate-fadeIn" aria-label="Breadcrumb">
       <Link
         to="/"
-        className="flex items-center text-gray-500 hover:text-primary transition-colors duration-300"
+        className="flex items-center text-white/80 hover:text-white transition-colors duration-300 p-1 active:scale-95"
         aria-label="Ir al inicio"
       >
         <Home size={16} />
@@ -24,16 +24,16 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
 
       {items.map((item, index) => (
         <React.Fragment key={index}>
-          <ChevronRight size={16} className="text-gray-400" />
+          <ChevronRight size={14} className="text-white/60 flex-shrink-0" />
           {item.path ? (
             <Link
               to={item.path}
-              className="text-gray-500 hover:text-primary transition-colors duration-300"
+              className="text-white/80 hover:text-white transition-colors duration-300 p-1 active:scale-95 min-h-[32px] flex items-center"
             >
               {item.label}
             </Link>
           ) : (
-            <span className="text-gray-700 font-semibold">{item.label}</span>
+            <span className="text-white font-semibold min-h-[32px] flex items-center">{item.label}</span>
           )}
         </React.Fragment>
       ))}

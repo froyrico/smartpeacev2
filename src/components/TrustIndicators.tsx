@@ -53,39 +53,39 @@ const testimonials = [
 
 const TrustIndicators = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 sm:py-16 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 mb-12 sm:mb-16 md:mb-20">
           {stats.map((stat, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="relative group animate-fadeIn"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className={`absolute inset-0 ${stat.color} opacity-10 rounded-xl group-hover:opacity-20 transition-opacity duration-300`}></div>
-              <div className="relative p-6 text-center">
-                <stat.icon className={`mx-auto mb-4 ${stat.color} text-white rounded-full p-2`} size={40} />
-                <div className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">{stat.value}</div>
-                <div className="text-gray-600">{stat.label}</div>
+              <div className="relative p-4 sm:p-5 md:p-6 text-center">
+                <stat.icon className={`mx-auto mb-2 sm:mb-3 md:mb-4 ${stat.color} text-white rounded-full p-1.5 sm:p-2`} size={32} />
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-1 sm:mb-2">{stat.value}</div>
+                <div className="text-xs sm:text-sm md:text-base text-gray-600">{stat.label}</div>
               </div>
             </div>
           ))}
         </div>
 
         {/* Testimonials */}
-        <div className="text-center mb-16 animate-fadeIn">
-          <h2 className="section-title">Lo que Dicen Nuestros Clientes</h2>
-          <p className="section-subtitle">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16 animate-fadeIn">
+          <h2 className="section-title text-2xl sm:text-3xl md:text-4xl px-2">Lo que Dicen Nuestros Clientes</h2>
+          <p className="section-subtitle text-base sm:text-lg px-2">
             Descubre por qué las empresas líderes confían en nuestras soluciones inteligentes.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
           {testimonials.map((testimonial, index) => (
-            <div 
-              key={index} 
-              className="bg-gray-50 rounded-xl p-8 relative group animate-fadeIn"
+            <div
+              key={index}
+              className="bg-gray-50 rounded-xl p-5 sm:p-6 md:p-8 relative group animate-fadeIn"
               style={{ animationDelay: `${index * 0.3}s` }}
             >
               <div className="absolute top-0 right-0 transform -translate-y-1/4 translate-x-1/4">
@@ -96,18 +96,18 @@ const TrustIndicators = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col mb-6">
-                <div className="flex gap-1 mb-4">
+              <div className="flex flex-col mb-4 sm:mb-6">
+                <div className="flex gap-0.5 sm:gap-1 mb-3 sm:mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="text-yellow-400 fill-current" size={20} />
+                    <Star key={i} className="text-yellow-400 fill-current" size={16} />
                   ))}
                 </div>
-                <blockquote className="text-gray-700 italic relative mb-6">
+                <blockquote className="text-sm sm:text-base text-gray-700 italic relative mb-4 sm:mb-6 leading-relaxed">
                   "{testimonial.quote}"
                 </blockquote>
                 <div className="mt-auto">
-                  <p className="font-bold text-gray-900">{testimonial.author}</p>
-                  <p className="text-gray-600">{testimonial.position}</p>
+                  <p className="font-bold text-sm sm:text-base text-gray-900">{testimonial.author}</p>
+                  <p className="text-xs sm:text-sm text-gray-600">{testimonial.position}</p>
                 </div>
               </div>
             </div>

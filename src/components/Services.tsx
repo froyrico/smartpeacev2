@@ -144,64 +144,64 @@ const Services = () => {
   const mainServices = services.slice(0, services.length - 1);
 
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-12 sm:py-16 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fadeIn">
-          <h2 className="section-title">Nuestros Servicios</h2>
-          <p className="section-subtitle">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16 animate-fadeIn">
+          <h2 className="section-title text-2xl sm:text-3xl md:text-4xl px-2">Nuestros Servicios</h2>
+          <p className="section-subtitle text-base sm:text-lg px-2">
             Descubre cómo nuestras soluciones inteligentes pueden transformar tu espacio en un entorno más seguro y eficiente.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
           {mainServices.map((service, index) => (
-            <div 
+            <div
               key={index}
-              className="card p-8 group animate-fadeIn"
+              className="card p-5 sm:p-6 md:p-8 group animate-fadeIn"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="flex items-center gap-4 mb-6">
-                <div className="relative">
-                  <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center transform rotate-3 group-hover:rotate-6 transition-transform duration-300">
-                    <service.icon className="text-white" size={32} />
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                <div className="relative flex-shrink-0">
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary rounded-2xl flex items-center justify-center transform rotate-3 group-hover:rotate-6 transition-transform duration-300">
+                    <service.icon className="text-white" size={28} />
                   </div>
                   <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full scale-150 -z-10 group-hover:scale-175 transition-transform duration-300"></div>
                 </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-800">{service.title}</h3>
-                  <p className="text-gray-600">{service.description}</p>
+                <div className="flex-1">
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-1">{service.title}</h3>
+                  <p className="text-sm sm:text-base text-gray-600">{service.description}</p>
                 </div>
               </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+
+              <div className="space-y-3 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-3 md:gap-4 mb-4 sm:mb-6">
                 {service.features.map((feature, idx) => (
-                  <div 
-                    key={idx} 
-                    className="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-300"
+                  <div
+                    key={idx}
+                    className="p-3 sm:p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-300 active:scale-98"
                   >
-                    <div className="flex items-center gap-3 mb-2">
-                      <feature.icon className="text-primary" size={20} />
-                      <h4 className="font-semibold text-gray-800">{feature.title}</h4>
+                    <div className="flex items-center gap-2 sm:gap-3 mb-1 sm:mb-2">
+                      <feature.icon className="text-primary flex-shrink-0" size={18} />
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">{feature.title}</h4>
                     </div>
-                    <p className="text-sm text-gray-600 ml-8">{feature.description}</p>
+                    <p className="text-xs sm:text-sm text-gray-600 pl-6 sm:pl-7">{feature.description}</p>
                   </div>
                 ))}
               </div>
 
-              <div className="bg-primary/5 border-l-4 border-primary p-4 rounded-r-lg mb-4">
-                <p className="text-gray-700">
+              <div className="bg-primary/5 border-l-4 border-primary p-3 sm:p-4 rounded-r-lg mb-3 sm:mb-4">
+                <p className="text-sm sm:text-base text-gray-700">
                   <span className="font-semibold">Beneficio Clave:</span> {service.benefit}
                 </p>
               </div>
 
-              <div className="mt-auto pt-4 border-t border-gray-100">
-                <p className="text-sm text-gray-600 mb-3">Ver este servicio aplicado en:</p>
+              <div className="mt-auto pt-3 sm:pt-4 border-t border-gray-100">
+                <p className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-3">Ver este servicio aplicado en:</p>
                 <div className="flex flex-wrap gap-2">
-                  <Link to="/sectores/residencial" className="inline-flex items-center gap-1 text-xs font-medium text-green-700 bg-green-50 px-3 py-1.5 rounded-full hover:bg-green-100 transition-colors">
+                  <Link to="/sectores/residencial" className="inline-flex items-center gap-1 text-xs font-medium text-green-700 bg-green-50 px-3 py-2 sm:py-1.5 rounded-full hover:bg-green-100 transition-colors active:scale-95 min-h-[44px] sm:min-h-[auto]">
                     <Home size={14} />
                     Residencial
                   </Link>
-                  <Link to="/sectores/corporativo" className="inline-flex items-center gap-1 text-xs font-medium text-blue-700 bg-blue-50 px-3 py-1.5 rounded-full hover:bg-blue-100 transition-colors">
+                  <Link to="/sectores/corporativo" className="inline-flex items-center gap-1 text-xs font-medium text-blue-700 bg-blue-50 px-3 py-2 sm:py-1.5 rounded-full hover:bg-blue-100 transition-colors active:scale-95 min-h-[44px] sm:min-h-[auto]">
                     <Building2 size={14} />
                     Corporativo
                   </Link>
@@ -212,41 +212,41 @@ const Services = () => {
         </div>
 
         {/* Last service card centered */}
-        <div className="mt-8 flex justify-center">
-          <div 
-            className="card p-8 group animate-fadeIn max-w-2xl w-full"
+        <div className="mt-6 sm:mt-8 flex justify-center">
+          <div
+            className="card p-5 sm:p-6 md:p-8 group animate-fadeIn max-w-2xl w-full"
             style={{ animationDelay: '1s' }}
           >
-            <div className="flex items-center gap-4 mb-6">
-              <div className="relative">
-                <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center transform rotate-3 group-hover:rotate-6 transition-transform duration-300">
-                  <lastService.icon className="text-white" size={32} />
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+              <div className="relative flex-shrink-0">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary rounded-2xl flex items-center justify-center transform rotate-3 group-hover:rotate-6 transition-transform duration-300">
+                  <lastService.icon className="text-white" size={28} />
                 </div>
                 <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full scale-150 -z-10 group-hover:scale-175 transition-transform duration-300"></div>
               </div>
-              <div>
-                <h3 className="text-2xl font-bold text-gray-800">{lastService.title}</h3>
-                <p className="text-gray-600">{lastService.description}</p>
+              <div className="flex-1">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-1">{lastService.title}</h3>
+                <p className="text-sm sm:text-base text-gray-600">{lastService.description}</p>
               </div>
             </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+
+            <div className="space-y-3 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-3 md:gap-4 mb-4 sm:mb-6">
               {lastService.features.map((feature, idx) => (
-                <div 
-                  key={idx} 
-                  className="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-300"
+                <div
+                  key={idx}
+                  className="p-3 sm:p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-300 active:scale-98"
                 >
-                  <div className="flex items-center gap-3 mb-2">
-                    <feature.icon className="text-primary" size={20} />
-                    <h4 className="font-semibold text-gray-800">{feature.title}</h4>
+                  <div className="flex items-center gap-2 sm:gap-3 mb-1 sm:mb-2">
+                    <feature.icon className="text-primary flex-shrink-0" size={18} />
+                    <h4 className="font-semibold text-gray-800 text-sm sm:text-base">{feature.title}</h4>
                   </div>
-                  <p className="text-sm text-gray-600 ml-8">{feature.description}</p>
+                  <p className="text-xs sm:text-sm text-gray-600 pl-6 sm:pl-7">{feature.description}</p>
                 </div>
               ))}
             </div>
 
-            <div className="bg-primary/5 border-l-4 border-primary p-4 rounded-r-lg">
-              <p className="text-gray-700">
+            <div className="bg-primary/5 border-l-4 border-primary p-3 sm:p-4 rounded-r-lg">
+              <p className="text-sm sm:text-base text-gray-700">
                 <span className="font-semibold">Beneficio Clave:</span> {lastService.benefit}
               </p>
             </div>

@@ -27,7 +27,7 @@ const ResidencialPage = () => {
       </header>
       <main className="overflow-x-hidden">
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-b from-gray-900 via-green-900 to-emerald-800">
+        <section className="relative py-12 sm:py-16 md:py-20 bg-gradient-to-b from-gray-900 via-green-900 to-emerald-800">
           <div className="absolute inset-0 z-0 opacity-20">
             <div
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -44,23 +44,24 @@ const ResidencialPage = () => {
             ]} />
 
             <div className="text-center">
-              <div className="flex justify-center mb-8 animate-scaleIn">
-                <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center transform rotate-3 transition-transform duration-500 hover:rotate-6 shadow-2xl">
-                  <Home className="text-green-600" size={40} />
+              <div className="flex justify-center mb-6 sm:mb-8 animate-scaleIn">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-2xl flex items-center justify-center transform rotate-3 transition-transform duration-500 hover:rotate-6 shadow-2xl">
+                  <Home className="text-green-600" size={32} />
                 </div>
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight animate-fadeIn">
-                TRANSFORMA TU HOGAR EN UNA<br />
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-3 sm:mb-4 leading-tight animate-fadeIn px-2">
+                TRANSFORMA TU HOGAR EN UNA<br className="hidden sm:block" />
+                <span className="sm:inline block mt-1 sm:mt-0"> </span>
                 <span className="text-green-400 drop-shadow-lg">EXPERIENCIA INTELIGENTE</span>
               </h1>
-              <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto animate-fadeIn" style={{ animationDelay: '0.2s' }}>
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-gray-200 max-w-3xl mx-auto animate-fadeIn px-2" style={{ animationDelay: '0.2s' }}>
                 Vive el máximo confort y seguridad con tecnología de vanguardia
               </p>
 
               <Link
                 to="/#sectors"
-                className="inline-flex items-center text-green-300 hover:text-green-200 transition-colors duration-300 animate-fadeIn"
+                className="inline-flex items-center text-sm sm:text-base text-green-300 hover:text-green-200 transition-colors duration-300 animate-fadeIn px-4 py-2 active:scale-95"
                 style={{ animationDelay: '0.3s' }}
               >
                 ← Ver todos los sectores
@@ -73,18 +74,18 @@ const ResidencialPage = () => {
         <div className="h-2 bg-gradient-to-r from-transparent via-green-500 to-transparent"></div>
 
         {/* Service 1: Automatización */}
-        <section className="py-24 bg-white">
+        <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row gap-12 items-center">
+            <div className="flex flex-col md:flex-row gap-8 sm:gap-10 md:gap-12 items-center">
               <div className="md:w-1/2 animate-slideInLeft">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center transform rotate-3 shadow-lg">
-                    <Lightbulb className="text-white" size={32} />
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center transform rotate-3 shadow-lg flex-shrink-0">
+                    <Lightbulb className="text-white" size={28} />
                   </div>
-                  <h2 className="text-3xl font-bold text-gray-800">1. AUTOMATIZACIÓN INTELIGENTE</h2>
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">1. AUTOMATIZACIÓN INTELIGENTE</h2>
                 </div>
 
-                <h3 className="text-xl font-semibold text-green-600 mb-6">Haz de tu casa un lugar cómodo y eficiente</h3>
+                <h3 className="text-lg sm:text-xl font-semibold text-green-600 mb-4 sm:mb-6">Haz de tu casa un lugar cómodo y eficiente</h3>
 
                 <p className="text-gray-700 mb-8 leading-relaxed">
                   ¿Te imaginas que las luces de tu sala se enciendan automáticamente al anochecer, o que la temperatura de tu hogar se regule sola para mantener el ambiente perfecto? Con SmartPeace, puedes tenerlo todo sin mover un dedo.

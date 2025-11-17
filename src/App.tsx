@@ -7,6 +7,7 @@ import Sectors from './components/Sectors';
 import TrustIndicators from './components/TrustIndicators';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 import CorporativoPage from './pages/CorporativoPage';
 import ResidencialPage from './pages/ResidencialPage';
 import InstitucionalPage from './pages/InstitucionalPage';
@@ -27,6 +28,7 @@ function HomePage() {
         </article>
       </main>
       <Footer />
+      <FloatingWhatsApp />
     </>
   );
 }
@@ -37,9 +39,9 @@ function App() {
       <div className="min-h-screen bg-gray-50 overflow-x-hidden">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/sectores/corporativo" element={<CorporativoPage />} />
-          <Route path="/sectores/residencial" element={<ResidencialPage />} />
-          <Route path="/sectores/institucional" element={<InstitucionalPage />} />
+          <Route path="/sectores/corporativo" element={<><CorporativoPage /><FloatingWhatsApp /></>} />
+          <Route path="/sectores/residencial" element={<><ResidencialPage /><FloatingWhatsApp /></>} />
+          <Route path="/sectores/institucional" element={<><InstitucionalPage /><FloatingWhatsApp /></>} />
         </Routes>
       </div>
     </Router>
