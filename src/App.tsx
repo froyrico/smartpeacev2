@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import Sectors from './components/Sectors';
 import TrustIndicators from './components/TrustIndicators';
+import WhyChooseUs from './components/WhyChooseUs';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
@@ -23,6 +24,7 @@ function HomePage() {
           <Hero />
           <Services />
           <Sectors />
+          <WhyChooseUs />
           <TrustIndicators />
           <ContactForm />
         </article>
